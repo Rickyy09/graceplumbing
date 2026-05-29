@@ -29,6 +29,7 @@
   --color-emergency-foreground: var(--emergency-foreground);
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
+  --color-burgundy: var(--burgundy);
   --color-steel: var(--steel);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
@@ -40,56 +41,59 @@
   --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
-  --shadow-elegant: 0 20px 50px -20px color-mix(in oklab, var(--primary) 35%, transparent);
+  --shadow-elegant: 0 20px 50px -20px color-mix(in oklab, var(--primary) 40%, transparent);
   --shadow-glow: 0 0 50px color-mix(in oklab, var(--primary-glow) 40%, transparent);
-  --shadow-card: 0 8px 30px -10px oklch(0.2 0.05 260 / 0.15);
+  --shadow-card: 0 8px 30px -10px rgb(29 46 84 / 0.15);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.28 0.13 255) 0%, oklch(0.42 0.18 250) 50%, oklch(0.55 0.18 245) 100%);
-  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
-  --gradient-emergency: linear-gradient(135deg, oklch(0.58 0.23 25), oklch(0.65 0.22 30));
+  --gradient-hero: linear-gradient(135deg, #1D2E54 0%, #1E3A6A 55%, #2a4a85 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary), #2a4a85);
+  --gradient-emergency: linear-gradient(135deg, #D20F0B, #582538);
 }
 
 :root {
   --radius: 0.75rem;
 
-  --background: oklch(0.99 0.005 250);
-  --foreground: oklch(0.18 0.04 260);
+  --background: #F8FAFC;
+  --foreground: #1D2E54;
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.04 260);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.04 260);
+  --card: #ffffff;
+  --card-foreground: #1D2E54;
+  --popover: #ffffff;
+  --popover-foreground: #1D2E54;
 
-  /* Brand: water blue */
-  --primary: oklch(0.42 0.18 250);
-  --primary-foreground: oklch(0.99 0 0);
-  --primary-glow: oklch(0.62 0.18 245);
+  /* Brand navy */
+  --primary: #1E3A6A;
+  --primary-foreground: #ffffff;
+  --primary-glow: #6DA6C7;
 
   /* Steel/silver */
-  --steel: oklch(0.72 0.02 255);
-  --secondary: oklch(0.95 0.01 250);
-  --secondary-foreground: oklch(0.22 0.06 260);
+  --steel: #94a3b8;
+  --secondary: #EEF2F7;
+  --secondary-foreground: #1D2E54;
 
-  --muted: oklch(0.96 0.008 250);
-  --muted-foreground: oklch(0.48 0.03 255);
+  --muted: #F1F5F9;
+  --muted-foreground: #475569;
 
-  --accent: oklch(0.95 0.02 245);
-  --accent-foreground: oklch(0.28 0.13 255);
+  --accent: #E8EFF6;
+  --accent-foreground: #1E3A6A;
 
-  /* Emergency red (from wrench accent) */
-  --emergency: oklch(0.58 0.23 25);
-  --emergency-foreground: oklch(1 0 0);
+  /* Emergency red */
+  --emergency: #D20F0B;
+  --emergency-foreground: #ffffff;
+
+  /* Burgundy accent */
+  --burgundy: #582538;
 
   /* WhatsApp green */
-  --whatsapp: oklch(0.65 0.18 152);
-  --whatsapp-foreground: oklch(1 0 0);
+  --whatsapp: #25D366;
+  --whatsapp-foreground: #ffffff;
 
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.99 0 0);
+  --destructive: #D20F0B;
+  --destructive-foreground: #ffffff;
 
-  --border: oklch(0.92 0.01 250);
-  --input: oklch(0.92 0.01 250);
-  --ring: oklch(0.55 0.18 245);
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #1E3A6A;
 }
 
 .dark {

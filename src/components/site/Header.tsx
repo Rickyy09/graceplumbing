@@ -15,11 +15,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-        <a href="#top" className="flex items-center gap-2">
-          <img src={logo} alt="Grace Plumbing Solution" className="h-11 w-11 object-contain" />
+        <a href="#top" className="flex items-center gap-2.5">
+          <img src={logo} alt="Grace Plumbing Solution - Pty Ltd" className="h-12 w-12 shrink-0 rounded-full object-contain" />
           <div className="leading-tight">
-            <div className="font-display text-base font-extrabold text-primary md:text-lg">Grace Plumbing</div>
-            <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">Solution · Centurion</div>
+            <div className="font-display text-sm font-extrabold text-primary md:text-base">Grace Plumbing Solution</div>
+            <div className="text-[10px] font-semibold uppercase tracking-widest text-burgundy">Pty Ltd · Centurion</div>
           </div>
         </a>
 

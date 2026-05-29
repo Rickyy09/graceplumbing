@@ -12,7 +12,7 @@ export function Contact() {
     const phone = data.get("phone");
     const message = data.get("message");
     const wa = `https://wa.me/27817074661?text=${encodeURIComponent(
-      `Hi Grace Plumbing,\nName: ${name}\nPhone: ${phone}\n\n${message}`
+      `Hi Grace Plumbing Solution - Pty Ltd,\nName: ${name}\nPhone: ${phone}\n\n${message}`
     )}`;
     window.open(wa, "_blank");
     setSent(true);
@@ -34,11 +34,11 @@ export function Contact() {
           <div className="space-y-4 lg:col-span-2">
             <ContactCard icon={Phone} title="Call us" lines={[<a key="t" href="tel:0817074661" className="font-bold text-primary">081 707 4661</a>]} />
             <ContactCard icon={Mail} title="Email" lines={[<a key="e" href="mailto:info@graceplumbingsolution.co.za" className="font-medium text-foreground break-all">info@graceplumbingsolution.co.za</a>]} />
-            <ContactCard icon={MapPin} title="Location" lines={["Heuwelsig Estate, Brilwewer Crescent", "Heuweloord, Centurion"]} />
+            <ContactCard icon={MapPin} title="Location" lines={["Heuwelsig Estate, Shira Ridge,", "Brilwewer Cres, Heuweloord,", "Centurion, 0157"]} />
             <div className="overflow-hidden rounded-2xl border border-border shadow-card">
               <iframe
-                title="Grace Plumbing Solution location"
-                src="https://www.google.com/maps?q=Heuweloord+Centurion&output=embed"
+                title="Grace Plumbing Solution - Pty Ltd location"
+                src="https://www.google.com/maps?q=Heuwelsig%20Estate%2C%20Shira%20Ridge%2C%20Brilwewer%20Cres%2C%20Heuweloord%2C%20Centurion%2C%200157&output=embed"
                 className="h-56 w-full"
                 loading="lazy"
               />
