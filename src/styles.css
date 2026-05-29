@@ -29,6 +29,7 @@
   --color-emergency-foreground: var(--emergency-foreground);
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
+  --color-burgundy: var(--burgundy);
   --color-steel: var(--steel);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
