@@ -2,11 +2,11 @@ import { Clock, BadgeCheck, FileCheck2, Wallet, Zap, MapPin } from "lucide-react
 
 const items = [
   { icon: Clock, title: "24/7 Emergency Response", desc: "Burst pipe at 2am? We answer." },
-  { icon: BadgeCheck, title: "Certified & Qualified Plumbers", desc: "Trained pros, not handymen." },
-  { icon: FileCheck2, title: "Certificate of Compliance", desc: "COC issued on every install." },
+  { icon: BadgeCheck, title: "Qualified & Licensed Plumbers", desc: "PIRB registered, trained professionals." },
+  { icon: FileCheck2, title: "Certificate of Compliance", desc: "COC issued on every qualifying install." },
   { icon: Wallet, title: "Affordable, Fair Pricing", desc: "Transparent quotes — no surprises." },
-  { icon: Zap, title: "Fast & Reliable Service", desc: "Same-day arrival across Gauteng." },
-  { icon: MapPin, title: "All Gauteng Areas Covered", desc: "Centurion, Pretoria, Joburg & beyond." },
+  { icon: Zap, title: "Fast & Reliable Service", desc: "Same-day arrival across the region." },
+  { icon: MapPin, title: "Centurion & Surrounding Areas", desc: "Centurion, Midrand, Sandton, Randburg, Pretoria Lynnwood, Kempton Park." },
 ];
 
 export function WhyUs() {
