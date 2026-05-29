@@ -1,13 +1,14 @@
-import { Flame, Bath, Waves, Wrench, Sun, Brush, Database, ArrowRight } from "lucide-react";
+import { Wrench, Flame, Waves, Hammer, Gauge, Database, Leaf, Siren, ArrowRight } from "lucide-react";
 
 const services = [
-  { icon: Flame, title: "Geyser Installation & Repairs", desc: "New installs, replacements and emergency geyser repairs with COC." },
-  { icon: Bath, title: "Bathroom Installations", desc: "Full bathroom renovations from concept to flawless finish." },
-  { icon: Waves, title: "Drainage & Pipe Installation", desc: "Blockages cleared, new drainage systems professionally laid." },
-  { icon: Wrench, title: "Leak Repairs & Maintenance", desc: "Hidden leak detection and lasting repairs — saving you water." },
-  { icon: Sun, title: "Solar Geysers & Heat Pumps", desc: "Energy-efficient hot water solutions to slash your bills." },
-  { icon: Brush, title: "Waterproofing & Tiling", desc: "Roof, balcony and wet-area waterproofing plus quality tiling." },
-  { icon: Database, title: "Water Backup Systems", desc: "Tanks and booster pumps so your taps never run dry." },
+  { icon: Wrench, title: "General Plumbing Repairs & Maintenance", desc: "Leaks, burst pipes, taps, mixers, showers, toilets and general plumbing maintenance." },
+  { icon: Flame, title: "Geysers & Hot Water Systems", desc: "Electric geysers, solar geysers, heat pumps, repairs, replacements and compliance checks." },
+  { icon: Waves, title: "Drainage & Blockages", desc: "Drain unblocking, sewer lines, high-pressure jetting and CCTV drain camera inspections." },
+  { icon: Hammer, title: "New Installations & Renovations", desc: "Plumbing for new builds, bathroom and kitchen renovations, basins, baths, showers, toilets and sinks." },
+  { icon: Gauge, title: "Water Supply & Reticulation", desc: "Water supply lines, water meters, valves, pressure testing and system checks." },
+  { icon: Database, title: "Water Backup Systems", desc: "Storage tanks, pumps, control valves and backup water solutions for homes and businesses." },
+  { icon: Leaf, title: "Water Conservation Solutions", desc: "Water-saving fixtures, leak checks, greywater/rainwater systems and efficient water usage advice." },
+  { icon: Siren, title: "24/7 Emergency Plumbing", desc: "Rapid response for leaks, burst pipes, blocked drains and geyser failures." },
 ];
 
 export function Services() {
