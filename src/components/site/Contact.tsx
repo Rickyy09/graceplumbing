@@ -12,7 +12,7 @@ export function Contact() {
     const phone = data.get("phone");
     const message = data.get("message");
     const wa = `https://wa.me/27817074661?text=${encodeURIComponent(
-      `Hi Grace Plumbing,\nName: ${name}\nPhone: ${phone}\n\n${message}`
+      `Hi Grace Plumbing Solution - Pty Ltd,\nName: ${name}\nPhone: ${phone}\n\n${message}`
     )}`;
     window.open(wa, "_blank");
     setSent(true);
