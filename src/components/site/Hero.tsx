@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Clock, ShieldCheck, Star } from "lucide-react";
+import { Phone, MessageCircle, ShieldCheck, BadgeCheck, Wrench, Clock } from "lucide-react";
 import hero from "@/assets/hero-plumber.jpg";
 
 export function Hero() {
@@ -12,14 +12,14 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emergency opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emergency" />
             </span>
-            Available 24/7 · Fast Response
+            Grace Plumbing Solution - Pty Ltd
           </div>
 
           <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
-            24/7 Emergency Plumbing Services in <span className="text-primary-glow">Gauteng</span>
+            Reliable Plumbing, Maintenance & Installation Services in <span className="text-primary-glow">Centurion</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/85">
-            Reliable, affordable & certified plumbing solutions for homes and businesses across Centurion and greater Gauteng.
+            Grace Plumbing Solution - Pty Ltd provides affordable, reliable and professional plumbing services for homes, businesses and commercial properties across Centurion and surrounding areas. Our team is registered, qualified and licensed to deliver repairs, maintenance, installations, geyser work, drainage solutions and 24/7 emergency call-outs.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -27,21 +27,22 @@ export function Hero() {
               href="tel:0817074661"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-emergency px-7 py-4 text-base font-bold text-emergency-foreground shadow-elegant transition hover:scale-[1.02] animate-pulse-ring"
             >
-              <Phone className="h-5 w-5" /> Call Now
+              <Phone className="h-5 w-5" /> Call 081 707 4661
             </a>
             <a
-              href="https://wa.me/27817074661?text=Hi%20Grace%20Plumbing%2C%20I%20need%20a%20free%20quote"
+              href="https://wa.me/27817074661?text=Hi%20Grace%20Plumbing%20Solution%2C%20I%20need%20a%20free%20quote"
               target="_blank" rel="noopener"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 text-base font-bold text-whatsapp-foreground shadow-elegant transition hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/80 bg-white/5 px-7 py-4 text-base font-bold text-white transition hover:bg-white/15"
             >
               <MessageCircle className="h-5 w-5" /> Free Quote (WhatsApp)
             </a>
           </div>
 
-          <div className="mt-10 grid grid-cols-3 gap-4 text-sm">
-            <Trust icon={Clock} text="24/7 Response" />
-            <Trust icon={ShieldCheck} text="COC Certified" />
-            <Trust icon={Star} text="5★ Service" />
+          <div className="mt-10 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+            <Trust icon={ShieldCheck} text="PIRB Registered" />
+            <Trust icon={BadgeCheck} text="Qualified & Licensed" />
+            <Trust icon={Clock} text="24/7 Emergency" />
+            <Trust icon={Wrench} text="Affordable & Reliable" />
           </div>
         </div>
 
@@ -49,7 +50,7 @@ export function Hero() {
           <div className="absolute -inset-4 rounded-3xl bg-primary-glow/30 blur-3xl" />
           <img
             src={hero}
-            alt="Certified Grace Plumbing Solution plumber installing bathroom fittings in Centurion"
+            alt="Certified Grace Plumbing Solution - Pty Ltd plumber working in Centurion"
             width={1920} height={1080}
             className="relative aspect-[4/3] w-full rounded-2xl object-cover shadow-elegant ring-1 ring-white/20"
           />
