@@ -10,9 +10,10 @@ export function Contact() {
     const data = new FormData(form);
     const name = data.get("name");
     const phone = data.get("phone");
+    const location = data.get("location");
     const message = data.get("message");
     const wa = `https://wa.me/27817074661?text=${encodeURIComponent(
-      `Hi Grace Plumbing Solution - Pty Ltd,\nName: ${name}\nPhone: ${phone}\n\n${message}`
+      `Hi Grace Plumbing Solution - Pty Ltd,\nName: ${name}\nPhone: ${phone}\nService location: ${location}\n\n${message}`
     )}`;
     window.open(wa, "_blank");
     setSent(true);
@@ -51,6 +52,7 @@ export function Contact() {
               <Field name="phone" label="Phone" type="tel" required />
             </div>
             <Field name="email" label="Email (optional)" type="email" />
+            <Field name="location" label="Service location" required placeholder="Where should the service be done? Example: Heuweloord, Centurion" />
             <div>
               <label className="text-sm font-medium text-foreground">How can we help?</label>
               <textarea name="message" required rows={5} placeholder="Briefly describe the issue or project…" className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-ring/20" />
@@ -81,11 +83,11 @@ function ContactCard({ icon: Icon, title, lines }: { icon: React.ComponentType<{
   );
 }
 
-function Field({ name, label, type = "text", required }: { name: string; label: string; type?: string; required?: boolean }) {
+function Field({ name, label, type = "text", required, placeholder }: { name: string; label: string; type?: string; required?: boolean; placeholder?: string }) {
   return (
     <div>
       <label className="text-sm font-medium text-foreground">{label}{required && <span className="text-emergency"> *</span>}</label>
-      <input name={name} type={type} required={required} className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-ring/20" />
+      <input name={name} type={type} required={required} placeholder={placeholder} className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-ring/20" />
     </div>
   );
 }
