@@ -1,13 +1,52 @@
-import bath from "@/assets/project-bathroom.jpg";
-import solar from "@/assets/project-solar.jpg";
-import drainage from "@/assets/project-drainage.jpg";
-import geyser from "@/assets/project-geyser.jpg";
-
 const projects = [
-  { img: bath, title: "New Bathroom Installation", tag: "Renovation" },
-  { img: solar, title: "Solar Geyser Installation", tag: "Solar" },
-  { img: drainage, title: "Drainage System Setup", tag: "Drainage" },
-  { img: geyser, title: "Geyser Replacement & COC", tag: "Geyser" },
+  {
+    img: "/projects/bathroom-renovation-completed-1.webp",
+    title: "Bathroom Renovation",
+    tag: "Renovation",
+    alt: "Bathroom renovation completed by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/bathroom-renovation-tiling-work-1.webp",
+    title: "Bathroom Tiling Work",
+    tag: "Tiling",
+    alt: "Bathroom tiling work by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/bathroom-renovation-progress-1.webp",
+    title: "Bathroom Renovation Progress",
+    tag: "In Progress",
+    alt: "Bathroom renovation in progress by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/bathroom-renovation-completed-2.webp",
+    title: "Completed Bathroom Installation",
+    tag: "Completed",
+    alt: "Completed bathroom installation by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/geyser-installation-roof-1.webp",
+    title: "Geyser Installation",
+    tag: "Geyser",
+    alt: "Roof geyser installation by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/geyser-piping-repair-1.webp",
+    title: "Geyser Piping Repair",
+    tag: "Repair",
+    alt: "Geyser piping repair by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/water-backup-tank-installation-1.webp",
+    title: "Water Backup Tank Installation",
+    tag: "Water Backup",
+    alt: "Water backup tank installation by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
+  {
+    img: "/projects/water-tank-pump-installation-1.webp",
+    title: "Water Tank & Pump Installation",
+    tag: "Pump",
+    alt: "Water tank and pump installation by Grace Plumbing Solution Pty Ltd in Centurion",
+  },
 ];
 
 export function Projects() {
@@ -25,7 +64,15 @@ export function Projects() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((p) => (
             <figure key={p.title} className="group relative overflow-hidden rounded-2xl shadow-card">
-              <img src={p.img} alt={p.title} loading="lazy" width={1024} height={768} className="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105" />
+              <img
+                src={p.img}
+                alt={p.alt}
+                loading="lazy"
+                decoding="async"
+                width={1024}
+                height={1280}
+                className="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/30 to-transparent" />
               <figcaption className="absolute inset-x-0 bottom-0 p-5 text-white">
                 <div className="inline-block rounded-full bg-emergency px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider">{p.tag}</div>
