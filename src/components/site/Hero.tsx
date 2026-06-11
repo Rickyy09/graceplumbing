@@ -1,6 +1,5 @@
 import { Phone, MessageCircle, ShieldCheck, BadgeCheck, Wrench, Clock } from "lucide-react";
-import heroAsset from "@/assets/hero-plumber.jpg.asset.json";
-const hero = heroAsset.url;
+const hero = "/hero-plumber.jpg";
 
 export function Hero() {
   return (
