@@ -16,7 +16,7 @@ export function Hero() {
           </div>
 
           <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
-            Reliable Plumbing, Maintenance & Installation Services in <span className="text-primary-glow">Centurion</span>
+            Quality and Reliable Plumbing, Maintenance & Installation Services in <span className="text-primary-glow">Centurion</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/85">
             Grace Plumbing Solution - Pty Ltd provides affordable, reliable and professional plumbing services for homes, businesses and commercial properties across Centurion and surrounding areas. Our team is registered, qualified and licensed to deliver repairs, maintenance, installations, geyser work, drainage solutions and 24/7 emergency call-outs.
